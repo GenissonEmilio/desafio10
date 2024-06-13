@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'idroid';
+  src: url('fontes/idroid.otf') format('opentype');
+}
+
+/*
+Paleta:
+ #84E1AD(verde claro para o background)
+ #1A5C38(verde escuro para o background do vídeo)
+
+*/
+
+body {
+  background-color: #84E1AD;
+  font-family: 'idroid', serif;
+}
+
+p {
+  text-align: justify;
+  text-indent: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #15C557;
+}
+
+a:not(nav a):after {
+  content: '📎';
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+}
+
+main {
+  background: #fff;
+  margin: 3px;
+  text-align: center;
+}
+
+footer {
+  background-color: #1A5C38;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+}
+
+article {
+  padding-left: 10px;
+}
+
+.navigation {
+  text-align: left;
+  margin: 10px;
+}
+
+.navigation a {
+  background-color: transparent;
+  color: white;
+}
+
+.navigation a:hover {
+  background-color: #3EAF68;
+}
+
+destaque {
+  background: #15C557;
+}
+
+.extra {
+  background-color: #fff;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.extra header {
+  display: flex;
+  background-color: #2FA866;
+  text-align: left;
+  padding: 1px;
+  border-radius: 5px 5px 0px 0px;
+  margin: 0 10px;
+}
+
+.extra main {
+  background-color: #C5EBD6;
+  margin: 0 10px;
+}
+
+.cab {
+  background-image: linear-gradient(to bottom, #37C374, #2EA663, #1A5C38);
+  margin: 0px;
+}
+
+.midia {
+  height: 600px;
+  width: 950px;
+  background-color: #1A5C38;
+  padding: 4px;
+  text-align: center;
+}
+
+.vid {
+  padding: 10px;
+}
+
+.principal {
+  padding: 4px;
+}
+
+.principal h1 {
+  text-align: left;
+  color: #145733;
+}
+
+.titulos {
+  background-image: linear-gradient(to right, #ACFFCD, #CEFEE1, #fff);
+}
+
+.girl {
+  width: 930px;
+}
+
+/* #CEFEE1
+#A2FDC6
+*/
