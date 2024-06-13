@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pseudo Elementos</title>
+  <style>
+    /*
+      > = children
+    */
+  
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    a {
+      color: red;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: darkred;
+    }
+    
+    a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: green;
+    }
+    
+    .especial::before {
+      content: '[link carai]';
+      color: red;
+      font-weight: bold;
+    }
+    
+    a::after {
+      content: '[link]';
+      color: #0E1FDA;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Personalizando links</h1>
+  <ul>
+    <li><a href="https://github.com/GenissonEmilio" target="_blank" class="especial">Repositório GitHub</a></li>
+    <li><a href="https://instagram.com/genisson.emilio">Perfil no Instagram</a></li>
+    <li><a href="https://linkedin.com/in/genisson-emilio">Perfil no linkedin</a></li>
+  </ul>
+</body>
+</html>
