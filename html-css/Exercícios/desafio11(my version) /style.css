@@ -24,32 +24,38 @@ main p {
   padding: 30px;
   padding-left: 30px;
   line-height: 2em;
+  text-align: justify;
 }
 
 section {
-  background-image: url('imagens/background001.jpg');
+  position: relative;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right bottom;
   background-size: 600px;
   width: 100%;
-  border: 1px solid red;
 }
 
 section .esp {
+  position: absolute;
   background-color: rgb(0,0,0,0.5);
   color: white;
-  border: 1px solid blue;
+  border: 1px solid black;
   padding: 0px;
   margin: 30px 0px 30px 0px;
   width: 50%;
   height: 10%;
+  background-position: center center;
 } 
 
 footer {
   background-color: black;
   color: white;
   text-align: center;
+}
+
+.especial {
+  background-image: url('imagens/background001.jpg');
 }
 
 .especial2 {
