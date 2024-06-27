@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 400px;
+  border-collapse: collapse;
+}
+
+tr.linha {
+  background-color: darkgray;
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
