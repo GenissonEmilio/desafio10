@@ -1,6 +1,10 @@
-let allData = [];
-let data = document.querySelectorAll('td').forEach(data => {
-  allData.push(data.textContent);
-});
 
-console.log(allData[1]);
+
+//Alinha o que for número a direita
+document.querySelectorAll('td ').forEach(dado => {
+  let dad = dado.textContent.replace(/ /g, "" );
+  if (isNaN(dad) == false) {
+    dado.style.textAlign = 'right';
+    console.log('mudou');
+  }
+})
