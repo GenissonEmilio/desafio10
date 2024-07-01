@@ -11,6 +11,7 @@
     }
     
     table {
+      position: relative;
       width: 500px;
       border-collapse: collapse;
     }
@@ -27,9 +28,26 @@
       background-color: lightgray;
     }
     
+    /*
+    Outra forma:
+      thead {
+        position: sticky;
+        top: 0;
+      }
+    */
+    
+    thead {
+      position: sticky;
+      top: -1px;
+    }
+    
     thead, tfoot {
-      background-color: gray;
+      background-color: #383838;
       color: white;
+    }
+    
+    tbody tr:nth-child(even) {
+      background-color: lightgray;
     }
   </style>
 </head>
@@ -76,6 +94,9 @@
       </tr>
     </tfoot>
   </table>
+  
+  <!--Para criar um Lorem é só usar o botão especial + espaço -->
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi rem magni dolor, reprehenderit eligendi ut beatae illo, in! Quia.</p>
   
   <script src="main.js"></script>
 </body>
